@@ -3,6 +3,8 @@
  * see commented examples below
  */
 
+import 'bootstrap';
+
 import '@fontsource/playfair-display/400.css';
 import '@fontsource/playfair-display/700.css';
 import '@fontsource/lato/400.css';
