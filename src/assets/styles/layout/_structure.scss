@@ -4,8 +4,8 @@
 }
 
 .l-main {
-  min-height: 50vh;
   width: 100%;
+  min-height: 50vh;
 }
 
 .l-footer {
@@ -17,7 +17,7 @@
   padding-top: var(--spacing-2xl);
   padding-bottom: var(--spacing-2xl);
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     padding-top: var(--spacing-3xl);
     padding-bottom: var(--spacing-3xl);
   }

@@ -1,10 +1,10 @@
 .btn {
-  font-family: var(--font-family-body);
-  font-weight: var(--font-weight-bold);
-  border-radius: var(--border-radius-md);
   padding: var(--spacing-sm) var(--spacing-lg);
   transition: all var(--transition-normal) var(--transition-ease-in-out);
   border-width: var(--border-width-medium);
+  border-radius: var(--border-radius-md);
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-bold);
 
   &:focus-visible {
     outline: 2px solid var(--color-primary);
@@ -13,40 +13,40 @@
 }
 
 .btn-primary {
-  background-color: var(--color-button-primary-bg);
   border-color: var(--color-button-primary-bg);
+  background-color: var(--color-button-primary-bg);
   color: var(--color-button-primary-text);
 
   &:hover:not(:disabled) {
-    background-color: var(--color-button-primary-hover);
-    border-color: var(--color-button-primary-hover);
     transform: translateY(-2px);
+    border-color: var(--color-button-primary-hover);
+    background-color: var(--color-button-primary-hover);
     box-shadow: var(--shadow-md);
   }
 
   &:active:not(:disabled) {
-    background-color: var(--color-canary-red-dark);
-    border-color: var(--color-canary-red-dark);
     transform: translateY(0);
+    border-color: var(--color-canary-red-dark);
+    background-color: var(--color-canary-red-dark);
   }
 }
 
 .btn-secondary {
-  background-color: var(--color-button-secondary-bg);
   border-color: var(--color-button-secondary-bg);
+  background-color: var(--color-button-secondary-bg);
   color: var(--color-button-secondary-text);
 
   &:hover:not(:disabled) {
-    background-color: var(--color-button-secondary-hover);
-    border-color: var(--color-button-secondary-hover);
     transform: translateY(-2px);
+    border-color: var(--color-button-secondary-hover);
+    background-color: var(--color-button-secondary-hover);
     box-shadow: var(--shadow-md);
   }
 
   &:active:not(:disabled) {
-    background-color: var(--color-canary-yellow-dark);
-    border-color: var(--color-canary-yellow-dark);
     transform: translateY(0);
+    border-color: var(--color-canary-yellow-dark);
+    background-color: var(--color-canary-yellow-dark);
   }
 }
 
@@ -55,9 +55,9 @@
   color: var(--color-primary);
 
   &:hover:not(:disabled) {
+    transform: translateY(-2px);
     background-color: var(--color-primary);
     color: var(--color-canary-white);
-    transform: translateY(-2px);
   }
 }
 

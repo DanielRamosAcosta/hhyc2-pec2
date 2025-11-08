@@ -1,6 +1,6 @@
 a,
 button {
-  &:hover:not(:disabled):not(.is-disabled) {
+  &:hover:not(:disabled, .is-disabled) {
     transform: translateY(-1px);
     transition: transform var(--transition-fast) var(--transition-ease-out);
   }
@@ -10,7 +10,7 @@ button {
     outline-offset: 2px;
   }
 
-  &:active:not(:disabled):not(.is-disabled) {
+  &:active:not(:disabled, .is-disabled) {
     transform: translateY(0);
   }
 }

@@ -1,52 +1,42 @@
 :root {
   color-scheme: light dark;
 
-  --color-canary-red: oklab(0.58 0.18 0.08);
-  --color-canary-red-light: oklab(0.75 0.15 0.07);
-  --color-canary-red-dark: oklab(0.45 0.20 0.09);
-
-  --color-canary-yellow: oklab(0.88 0.02 0.18);
-  --color-canary-yellow-light: oklab(0.94 0.01 0.15);
-  --color-canary-yellow-dark: oklab(0.75 0.03 0.20);
-
-  --color-canary-green: oklab(0.55 -0.12 0.10);
-  --color-canary-green-light: oklab(0.70 -0.10 0.08);
-  --color-canary-green-dark: oklab(0.42 -0.14 0.12);
-
-  --color-canary-black: oklab(0.15 0 0);
-  --color-canary-white: oklab(0.98 0 0);
-
-  --color-neutral-50: oklab(0.97 0 0);
-  --color-neutral-100: oklab(0.94 0 0);
-  --color-neutral-200: oklab(0.88 0 0);
-  --color-neutral-300: oklab(0.78 0 0);
-  --color-neutral-400: oklab(0.65 0 0);
-  --color-neutral-500: oklab(0.52 0 0);
-  --color-neutral-600: oklab(0.42 0 0);
-  --color-neutral-700: oklab(0.32 0 0);
-  --color-neutral-800: oklab(0.22 0 0);
-  --color-neutral-900: oklab(0.15 0 0);
-
+  --color-canary-red: oklab(58.% 0.18 0.08);
+  --color-canary-red-light: oklab(75% 0.15 0.07);
+  --color-canary-red-dark: oklab(45% 0.20 0.09);
+  --color-canary-yellow: oklab(88% 0.02 0.18);
+  --color-canary-yellow-light: oklab(94% 0.01 0.15);
+  --color-canary-yellow-dark: oklab(75% 0.03 0.20);
+  --color-canary-green: oklab(55.% -0.12 0.10);
+  --color-canary-green-light: oklab(70% -0.10 0.08);
+  --color-canary-green-dark: oklab(42% -0.14 0.12);
+  --color-canary-black: oklab(15% 0 0);
+  --color-canary-white: oklab(98% 0 0);
+  --color-neutral-50: oklab(97% 0 0);
+  --color-neutral-100: oklab(94% 0 0);
+  --color-neutral-200: oklab(88% 0 0);
+  --color-neutral-300: oklab(78% 0 0);
+  --color-neutral-400: oklab(65% 0 0);
+  --color-neutral-500: oklab(52% 0 0);
+  --color-neutral-600: oklab(42% 0 0);
+  --color-neutral-700: oklab(32% 0 0);
+  --color-neutral-800: oklab(22% 0 0);
+  --color-neutral-900: oklab(15% 0 0);
   --color-primary: var(--color-canary-red);
   --color-secondary: var(--color-canary-yellow);
   --color-accent: var(--color-canary-green);
-
   --color-background: light-dark(var(--color-canary-white), var(--color-neutral-900));
   --color-surface: light-dark(var(--color-neutral-50), var(--color-neutral-800));
   --color-text-primary: light-dark(var(--color-neutral-900), var(--color-neutral-50));
   --color-text-secondary: light-dark(var(--color-neutral-700), var(--color-neutral-300));
   --color-text-disabled: light-dark(var(--color-neutral-400), var(--color-neutral-600));
-
   --color-border: light-dark(var(--color-neutral-200), var(--color-neutral-700));
   --color-border-hover: light-dark(var(--color-neutral-300), var(--color-neutral-600));
-
   --color-link: light-dark(var(--color-canary-red), var(--color-canary-red-light));
   --color-link-hover: light-dark(var(--color-canary-red-dark), var(--color-canary-red));
-
   --color-button-primary-bg: var(--color-primary);
   --color-button-primary-text: var(--color-canary-white);
   --color-button-primary-hover: var(--color-canary-red-dark);
-
   --color-button-secondary-bg: var(--color-secondary);
   --color-button-secondary-text: var(--color-neutral-900);
   --color-button-secondary-hover: var(--color-canary-yellow-dark);
