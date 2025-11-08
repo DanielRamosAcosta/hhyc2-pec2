@@ -3,6 +3,12 @@
  * Do not include SCSS code in this file.
  */
 
+/**
+ * CSS Cascade Layers
+ * Define layer order (first = lowest priority, last = highest priority)
+ */
+@layer framework, base, components, layouts, utilities;
+
  /**
  * Import dependencies
  */
