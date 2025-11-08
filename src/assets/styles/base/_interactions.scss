@@ -1,0 +1,16 @@
+a,
+button {
+  &:hover:not(:disabled):not(.is-disabled) {
+    transform: translateY(-1px);
+    transition: transform var(--transition-fast) var(--transition-ease-out);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  &:active:not(:disabled):not(.is-disabled) {
+    transform: translateY(0);
+  }
+}

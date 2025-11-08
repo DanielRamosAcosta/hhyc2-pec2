@@ -1,0 +1,26 @@
+.l-container {
+  width: 100%;
+  max-width: var(--max-width-container);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+
+  @media (min-width: 768px) {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
+  }
+}
+
+.l-container--narrow {
+  max-width: var(--max-width-content);
+}
+
+.l-container--fluid {
+  max-width: none;
+}

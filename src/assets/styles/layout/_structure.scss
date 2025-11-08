@@ -1,0 +1,24 @@
+.l-header {
+  position: relative;
+  width: 100%;
+}
+
+.l-main {
+  min-height: 50vh;
+  width: 100%;
+}
+
+.l-footer {
+  width: 100%;
+}
+
+.l-section {
+  width: 100%;
+  padding-top: var(--spacing-2xl);
+  padding-bottom: var(--spacing-2xl);
+
+  @media (min-width: 768px) {
+    padding-top: var(--spacing-3xl);
+    padding-bottom: var(--spacing-3xl);
+  }
+}

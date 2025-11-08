@@ -5,14 +5,17 @@
 }
 
 @layer base {
+  @import "base/reset";
   @import "base/colors";
   @import "base/variables";
   @import "base/responsive";
   @import "base/typography";
+  @import "base/interactions";
 }
 
 @layer layout {
-  @import "layout/home";
+  @import "layout/container";
+  @import "layout/structure";
 }
 
 @layer modules {
@@ -21,6 +24,7 @@
   @import "modules/buttons";
   @import "modules/social-icons";
   @import "modules/logo";
+  @import "modules/hero";
 }
 
 @layer state {
