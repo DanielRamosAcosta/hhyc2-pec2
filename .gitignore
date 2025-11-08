@@ -53,6 +53,7 @@ Icon
 .Trashes
 *.md
 !README.md
+.playwright-*
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 

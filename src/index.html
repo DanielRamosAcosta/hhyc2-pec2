@@ -8,18 +8,62 @@
     <title>UOC Boilerplate</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+    <!-- Bootstrap Test: Navbar Component -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap Test</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <!-- Bootstrap Test: Alert Component -->
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Bootstrap 5 is working!</h4>
+        <p>This alert component confirms that Bootstrap has been successfully installed and configured.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="uoc-container">
+            <picture>
+              <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
+              <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
+            </picture>
+            <h1 class="uoc-title">Hello, UOC!</h1>
+            <p>
+              This is a starter template for the Advanced HTML and CSS Tools courses
+              from the Master's Program in Multimedia Applications and the Master's
+              Program in Web App and Website Development at the Universitat Oberta de
+              Catalunya.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <!-- Bootstrap Test: Card Component -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap Card</h5>
+              <p class="card-text">This is a test card component to verify Bootstrap styling.</p>
+              <!-- Bootstrap Test: Button Component -->
+              <a href="#" class="btn btn-primary">Test Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
