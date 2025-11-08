@@ -1,26 +1,4 @@
-/**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
-
-/**
- * CSS Cascade Layers
- * Define layer order (first = lowest priority, last = highest priority)
- */
 @layer framework, base, components, layouts, utilities;
 
- /**
- * Import dependencies
- */
 @import "dependencies";
-
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
- @import "layouts/home";
-
-/**
- * Do NOT include anything else in this file!
- */
+@import "layout/home";
