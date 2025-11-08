@@ -1,4 +1,28 @@
 @layer framework, base, layout, modules, state, theme;
 
-@import "dependencies";
-@import "layout/home";
+@layer framework {
+  @import "dependencies";
+}
+
+@layer base {
+  @import "base/colors";
+  @import "base/variables";
+  @import "base/responsive";
+  @import "base/typography";
+}
+
+@layer layout {
+  @import "layout/home";
+}
+
+@layer modules {
+  @import "modules/header";
+  @import "modules/footer";
+  @import "modules/buttons";
+  @import "modules/social-icons";
+  @import "modules/logo";
+}
+
+@layer state {
+  @import "state/states";
+}

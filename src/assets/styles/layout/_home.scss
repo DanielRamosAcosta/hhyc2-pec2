@@ -1,7 +1,115 @@
-@import "../base/variables";
+@import '../base/responsive';
 
-@layer layout {
-  .home {
-    
+.home-hero {
+  container-type: inline-size;
+  container-name: hero;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url('../images/romeria-san-isidro.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @supports not (display: grid) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-3xl) var(--spacing-md);
+    min-height: 70vh;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+  }
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+    justify-items: center;
+    min-height: 70vh;
+    padding: var(--spacing-2xl) var(--spacing-md);
+
+    @container hero (min-width: 600px) {
+      padding: var(--spacing-3xl) var(--spacing-xl);
+    }
+
+    @include respond-to-tablet {
+      padding: var(--spacing-3xl) var(--spacing-xl);
+      min-height: 80vh;
+    }
+
+    @include respond-to-desktop {
+      padding: var(--spacing-3xl) var(--spacing-2xl);
+      min-height: 90vh;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.6)
+      );
+      z-index: 1;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    position: relative;
+    z-index: 2;
+    color: var(--color-canary-white);
+    text-align: center;
+    max-width: 50rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  }
+
+  &__title {
+    grid-row: 2;
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-md);
+    line-height: var(--line-height-tight);
+
+    @container hero (min-width: 600px) {
+      font-size: var(--font-size-4xl);
+    }
+
+    @include respond-to-tablet {
+      font-size: var(--font-size-5xl);
+    }
+
+    @include respond-to-desktop {
+      font-size: var(--font-size-6xl);
+    }
+  }
+
+  &__subtitle {
+    grid-row: 3;
+    align-self: start;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    font-weight: var(--font-weight-normal);
+
+    @container hero (min-width: 600px) {
+      font-size: var(--font-size-lg);
+    }
+
+    @include respond-to-tablet {
+      font-size: var(--font-size-xl);
+    }
+
+    @include respond-to-desktop {
+      font-size: var(--font-size-2xl);
+    }
   }
 }

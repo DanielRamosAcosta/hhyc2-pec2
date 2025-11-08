@@ -1,71 +1,27 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jornadas de Cocina Tradicional Canaria 2025 - Descubre los sabores auténticos de las Islas Canarias">
+    <meta name="keywords" content="cocina canaria, gastronomía, jornadas, recetas tradicionales, Islas Canarias">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <title>Jornadas de Cocina Tradicional Canaria 2025 | Inicio</title>
   </head>
   <body>
-    <!-- Bootstrap Test: Navbar Component -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bootstrap Test</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <include src="./views/header.html"></include>
 
-    <div class="container mt-5">
-      <!-- Bootstrap Test: Alert Component -->
-      <div class="alert alert-success" role="alert">
-        <h4 class="alert-heading">Bootstrap 5 is working!</h4>
-        <p>This alert component confirms that Bootstrap has been successfully installed and configured.</p>
-      </div>
+    <main class="home-hero">
+      <h1 class="home-hero__title">Jornadas de Cocina Tradicional Canaria 2025</h1>
+      <p class="home-hero__subtitle">
+        Descubre los secretos de la gastronomía canaria de la mano de los mejores chefs y expertos culinarios
+      </p>
+    </main>
 
-      <div class="row">
-        <div class="col-md-8">
-          <div class="uoc-container">
-            <picture>
-              <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-              <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-            </picture>
-            <h1 class="uoc-title">Hello, UOC!</h1>
-            <p>
-              This is a starter template for the Advanced HTML and CSS Tools courses
-              from the Master's Program in Multimedia Applications and the Master's
-              Program in Web App and Website Development at the Universitat Oberta de
-              Catalunya.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <!-- Bootstrap Test: Card Component -->
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Bootstrap Card</h5>
-              <p class="card-text">This is a test card component to verify Bootstrap styling.</p>
-              <!-- Bootstrap Test: Button Component -->
-              <a href="#" class="btn btn-primary">Test Button</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>

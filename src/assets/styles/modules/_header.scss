@@ -1,0 +1,95 @@
+@import '../base/responsive';
+
+.header {
+  background-color: var(--color-surface);
+  border-bottom: var(--border-width-thin) solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-sticky);
+  box-shadow: var(--shadow-sm);
+
+  .navbar {
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    transition: opacity var(--transition-normal) var(--transition-ease-in-out);
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    img {
+      height: 3rem;
+      width: auto;
+
+      @include respond-to-tablet {
+        height: 3.5rem;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border-color: var(--color-border);
+    padding: var(--spacing-sm);
+
+    &:hover {
+      background-color: var(--color-surface);
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+
+  .navbar-collapse {
+    @include respond-to-tablet {
+      justify-content: flex-end;
+    }
+  }
+
+  .navbar-nav {
+    gap: var(--spacing-sm);
+
+    @include respond-to-tablet {
+      flex-direction: row;
+      gap: var(--spacing-lg);
+    }
+
+    .nav-link {
+      color: var(--color-text-primary);
+      font-weight: var(--font-weight-normal);
+      padding: var(--spacing-sm) var(--spacing-md);
+      transition: color var(--transition-normal) var(--transition-ease-in-out);
+      position: relative;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: var(--spacing-md);
+        right: var(--spacing-md);
+        height: var(--border-width-medium);
+        background-color: var(--color-primary);
+        transform: scaleX(0);
+        transition: transform var(--transition-normal) var(--transition-ease-in-out);
+      }
+
+      &:hover::after,
+      &.is-active::after {
+        transform: scaleX(1);
+      }
+
+      @include respond-to-tablet {
+        padding: var(--spacing-sm) 0;
+      }
+    }
+  }
+}

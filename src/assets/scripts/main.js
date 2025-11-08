@@ -3,8 +3,11 @@
  * see commented examples below
  */
 
-// import 'some-node-module';
-// import SomeModule from 'some-node-module';
+import '@fontsource/playfair-display/400.css';
+import '@fontsource/playfair-display/700.css';
+import '@fontsource/lato/400.css';
+import '@fontsource/lato/700.css';
+import '@fontsource/lato/900.css';
 
 /**
  * Write any other JavaScript below

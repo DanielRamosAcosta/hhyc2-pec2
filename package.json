@@ -45,6 +45,8 @@
     "sharp": "^0.33.5"
   },
   "dependencies": {
+    "@fontsource/lato": "^5.2.7",
+    "@fontsource/playfair-display": "^5.2.8",
     "@fortawesome/fontawesome-free": "^7.1.0",
     "bootstrap": "^5.3.8"
   }
