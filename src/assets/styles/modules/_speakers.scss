@@ -137,9 +137,9 @@
   font-size: var(--font-size-xs);
 
   a {
+    transition: color var(--transition-fast) var(--transition-ease-in-out);
     color: var(--color-neutral-600);
     text-decoration: underline;
-    transition: color var(--transition-fast) var(--transition-ease-in-out);
 
     &:hover,
     &:focus {

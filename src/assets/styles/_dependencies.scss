@@ -4,6 +4,12 @@
 @import "~bootstrap/scss/maps";
 @import "~bootstrap/scss/mixins";
 
+$font-path: "../webfonts";
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
 @layer framework {
   @import "~bootstrap/scss/utilities";
   @import "~bootstrap/scss/root";
