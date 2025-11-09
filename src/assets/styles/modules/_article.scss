@@ -141,9 +141,9 @@
 }
 
 .argument-list__number {
+  display: flex;
   position: relative;
   left: 0;
-  display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 3rem;
@@ -156,14 +156,14 @@
 
   @include respond-to-tablet {
     position: absolute;
-    transform: translateX(-50%);
-  justify-content: center;
     top: 0;
     left: calc(-1 * var(--spacing-lg));
+  justify-content: center;
     width: 3.5rem;
     height: 3.5rem;
-    font-size: 1.75rem;
+    transform: translateX(-50%);
     transform: translateX(0);
+    font-size: 1.75rem;
   }
 
   &::before {
@@ -266,8 +266,8 @@
 .article-image--small {
   @include respond-to-tablet {
     max-width: 70%;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
   @include respond-to-desktop {
