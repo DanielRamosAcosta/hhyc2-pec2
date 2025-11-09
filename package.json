@@ -17,7 +17,11 @@
     "web": {
       "context": "browser",
       "publicUrl": "./",
-      "source": ["src/index.html", "src/speakers.html", "src/article.html"],
+      "source": [
+        "src/index.html",
+        "src/speakers.html",
+        "src/article.html"
+      ],
       "engines": {
         "browsers": "last 2 versions, > 0.5%, not dead"
       }
@@ -37,6 +41,7 @@
   },
   "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
   "devDependencies": {
+    "@parcel/resolver-glob": "^2.16.1",
     "@parcel/transformer-sass": "^2.16.1",
     "autoprefixer": "^10.4.21",
     "npm-run-all": "^4.1.5",
