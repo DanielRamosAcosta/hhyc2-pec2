@@ -39,7 +39,7 @@
 .article-hero__author {
   position: relative;
   z-index: 2;
-  color: var(--color-white);
+  color: oklab(98% 0 0);
 }
 
 .article-hero__title {
@@ -150,7 +150,7 @@
   height: 3rem;
   border-radius: var(--border-radius-full);
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: oklab(98% 0 0);
   font-size: 1.5rem;
   font-weight: 700;
 
