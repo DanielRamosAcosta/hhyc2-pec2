@@ -1,0 +1,27 @@
+$canary-red: #c9302c;
+$canary-red-light: #e57373;
+$canary-red-dark: #8e2320;
+$canary-yellow: #f4c430;
+$canary-yellow-light: #fff9c4;
+$canary-yellow-dark: #d4a400;
+$canary-green: #6b9b7f;
+$canary-green-light: #a5d6a7;
+$canary-green-dark: #4a7c59;
+$theme-colors: (
+  "primary": $canary-red,
+  "secondary": $canary-yellow,
+  "success": $canary-green,
+  "info": $canary-green-light,
+  "warning": $canary-yellow-dark,
+  "danger": $canary-red-dark
+);
+$primary: $canary-red;
+$secondary: $canary-yellow;
+$success: $canary-green;
+$info: $canary-green-light;
+$warning: $canary-yellow-dark;
+$danger: $canary-red-dark;
+$font-family-sans-serif: 'Lato', -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: 'Playfair Display', georgia, "Times New Roman", serif;
+$headings-font-weight: 700;
