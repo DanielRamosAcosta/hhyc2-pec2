@@ -41,6 +41,7 @@
   --color-button-secondary-text: var(--color-neutral-900);
   --color-button-secondary-hover: var(--color-canary-yellow-dark);
   --color-white: light-dark(var(--color-canary-white), var(--color-neutral-900));
+  --color-black: light-dark(var(--color-neutral-900), var(--color-canary-white));
   --color-neutral-50-adaptive: light-dark(var(--color-neutral-50), var(--color-neutral-800));
   --color-neutral-100-adaptive: light-dark(var(--color-neutral-100), var(--color-neutral-700));
   --color-neutral-200-adaptive: light-dark(var(--color-neutral-200), var(--color-neutral-600));
