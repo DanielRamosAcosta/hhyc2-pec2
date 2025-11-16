@@ -1,13 +1,13 @@
 :root {
   color-scheme: light dark;
 
-  --color-canary-red: oklab(58.% 0.18 0.08);
+  --color-canary-red: oklab(58% 0.18 0.08);
   --color-canary-red-light: oklab(75% 0.15 0.07);
   --color-canary-red-dark: oklab(45% 0.20 0.09);
   --color-canary-yellow: oklab(88% 0.02 0.18);
   --color-canary-yellow-light: oklab(94% 0.01 0.15);
   --color-canary-yellow-dark: oklab(75% 0.03 0.20);
-  --color-canary-green: oklab(55.% -0.12 0.10);
+  --color-canary-green: oklab(55% -0.12 0.10);
   --color-canary-green-light: oklab(70% -0.10 0.08);
   --color-canary-green-dark: oklab(42% -0.14 0.12);
   --color-canary-black: oklab(15% 0 0);
@@ -40,4 +40,14 @@
   --color-button-secondary-bg: var(--color-secondary);
   --color-button-secondary-text: var(--color-neutral-900);
   --color-button-secondary-hover: var(--color-canary-yellow-dark);
+  --color-white: light-dark(var(--color-canary-white), var(--color-neutral-900));
+  --color-neutral-50-adaptive: light-dark(var(--color-neutral-50), var(--color-neutral-800));
+  --color-neutral-100-adaptive: light-dark(var(--color-neutral-100), var(--color-neutral-700));
+  --color-neutral-200-adaptive: light-dark(var(--color-neutral-200), var(--color-neutral-600));
+  --color-neutral-300-adaptive: light-dark(var(--color-neutral-300), var(--color-neutral-500));
+  --color-neutral-400-adaptive: light-dark(var(--color-neutral-400), var(--color-neutral-400));
+  --color-neutral-600-adaptive: light-dark(var(--color-neutral-600), var(--color-neutral-300));
+  --color-neutral-700-adaptive: light-dark(var(--color-neutral-700), var(--color-neutral-200));
+  --color-neutral-800-adaptive: light-dark(var(--color-neutral-800), var(--color-neutral-100));
+  --color-neutral-900-adaptive: light-dark(var(--color-neutral-900), var(--color-neutral-50));
 }

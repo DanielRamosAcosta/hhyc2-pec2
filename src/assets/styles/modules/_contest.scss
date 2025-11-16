@@ -88,19 +88,19 @@
 }
 
 .contest-form-section {
-  background-color: var(--color-neutral-50);
+  background-color: var(--color-neutral-50-adaptive);
 }
 
 .contest-prizes {
   background: linear-gradient(
     180deg,
-    var(--color-neutral-50) 0%,
+    var(--color-neutral-50-adaptive) 0%,
     var(--color-white) 100%
   );
 }
 
 .contest-rules {
-  background-color: var(--color-neutral-50);
+  background-color: var(--color-neutral-50-adaptive);
 }
 
 .contest-timeline {
@@ -112,7 +112,7 @@
 }
 
 .contest-faq {
-  background-color: var(--color-neutral-50);
+  background-color: var(--color-neutral-50-adaptive);
 }
 
 .contest-testimonials {
@@ -129,7 +129,7 @@
 
 .contest-contact {
   padding-block-end: var(--spacing-4xl);
-  background-color: var(--color-neutral-50);
+  background-color: var(--color-neutral-50-adaptive);
 }
 
 .contest-section-title {
@@ -147,7 +147,7 @@
 
 .contest-section-description {
   margin-block-end: calc(1lh * 1.5);
-  color: var(--color-neutral-700);
+  color: var(--color-text-secondary);
   font-size: var(--font-size-base);
   line-height: 1.6;
 
@@ -159,7 +159,7 @@
 .contest-form {
   padding: var(--spacing-xl);
   border-radius: calc(var(--border-radius) * 2);
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   box-shadow: var(--shadow-lg);
   container-type: inline-size;
   container-name: contest-form;
@@ -193,8 +193,8 @@
   }
 
   .input-group-text {
-    border-color: var(--color-neutral-300);
-    background-color: color-mix(in oklab, var(--color-primary) 10%, var(--color-white));
+    border-color: var(--color-border);
+    background-color: color-mix(in oklab, var(--color-primary) 10%, var(--color-surface));
     color: var(--color-primary);
   }
 
@@ -203,6 +203,7 @@
     transition: all var(--transition-normal) var(--transition-ease-in-out);
     border-color: var(--color-primary);
     background-color: var(--color-primary);
+    color: var(--color-button-primary-text);
     font-size: var(--font-size-lg);
     font-weight: 700;
 
@@ -228,7 +229,7 @@
   container-name: prize-card;
   transition: transform var(--transition-normal) var(--transition-ease-in-out),
               box-shadow var(--transition-normal) var(--transition-ease-in-out);
-  border: 2px solid var(--color-neutral-200);
+  border: 2px solid var(--color-border);
   border-radius: calc(var(--border-radius) * 2);
 
   &:hover {
@@ -247,17 +248,17 @@
   border-color: color-mix(in oklab, var(--color-canary-yellow) 60%, var(--color-canary-red));
   background: linear-gradient(
     135deg,
-    color-mix(in oklab, var(--color-canary-yellow) 10%, var(--color-white)),
-    var(--color-white)
+    color-mix(in oklab, var(--color-canary-yellow) 10%, var(--color-surface)),
+    var(--color-surface)
   );
 }
 
 .contest-prize-card--second {
-  border-color: var(--color-neutral-400);
+  border-color: var(--color-neutral-400-adaptive);
   background: linear-gradient(
     135deg,
-    color-mix(in oklab, var(--color-neutral-300) 20%, var(--color-white)),
-    var(--color-white)
+    color-mix(in oklab, var(--color-neutral-300) 20%, var(--color-surface)),
+    var(--color-surface)
   );
 }
 
@@ -265,8 +266,8 @@
   border-color: color-mix(in oklab, var(--color-canary-red) 40%, var(--color-canary-yellow));
   background: linear-gradient(
     135deg,
-    color-mix(in oklab, var(--color-canary-red) 8%, var(--color-white)),
-    var(--color-white)
+    color-mix(in oklab, var(--color-canary-red) 8%, var(--color-surface)),
+    var(--color-surface)
   );
 }
 
@@ -288,6 +289,12 @@
   font-family: var(--font-family-heading);
   font-size: clamp(var(--font-size-2xl), 5cqw, var(--font-size-4xl));
   font-weight: 900;
+}
+
+.contest-prize-card {
+  .list-unstyled li {
+    color: var(--color-text-primary);
+  }
 }
 
 .contest-timeline-content {
@@ -321,7 +328,7 @@
 .contest-timeline-label {
   h3 {
     margin: 0;
-    color: var(--color-neutral-900);
+    color: var(--color-text-primary);
     font-family: var(--font-family-heading);
     font-size: clamp(var(--font-size-base), 2.5cqw, var(--font-size-xl));
     font-weight: 700;
@@ -329,7 +336,7 @@
 
   p {
     margin: 0;
-    color: var(--color-neutral-600);
+    color: var(--color-text-secondary);
     font-size: clamp(var(--font-size-sm), 2cqw, var(--font-size-base));
   }
 }
@@ -346,6 +353,7 @@
   margin-inline: auto;
   border: none;
   border-radius: calc(var(--border-radius) * 2);
+  background-color: var(--color-surface);
   box-shadow: var(--shadow-lg);
 
   .card-body {
@@ -368,7 +376,7 @@
   p {
     position: relative;
     padding-inline-start: clamp(var(--spacing-lg), 4cqw, var(--spacing-xl));
-    color: var(--color-neutral-800);
+    color: var(--color-text-primary);
     font-size: clamp(var(--font-size-base), 2.5cqw, var(--font-size-lg));
     font-style: italic;
     line-height: 1.6;
@@ -379,7 +387,7 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
-  color: var(--color-neutral-700);
+  color: var(--color-text-secondary);
   font-size: clamp(var(--font-size-sm), 2cqw, var(--font-size-base));
 }
 
@@ -436,8 +444,9 @@
 
 .accordion-item {
   margin-block-end: var(--spacing-md);
-  border: 1px solid var(--color-neutral-300);
+  border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
+  background-color: var(--color-surface);
 
   &:last-child {
     margin-block-end: 0;
@@ -448,19 +457,19 @@
   padding-block: var(--spacing-md);
   padding-inline: var(--spacing-lg);
   transition: background-color var(--transition-normal) var(--transition-ease-in-out);
-  background-color: color-mix(in oklab, var(--color-primary) 5%, var(--color-white));
-  color: var(--color-neutral-900);
+  background-color: color-mix(in oklab, var(--color-primary) 5%, var(--color-surface));
+  color: var(--color-text-primary);
   font-family: var(--font-family-heading);
   font-size: clamp(var(--font-size-base), 2.5cqw, var(--font-size-lg));
   font-weight: 700;
 
   &:not(.collapsed) {
-    background-color: color-mix(in oklab, var(--color-primary) 15%, var(--color-white));
+    background-color: color-mix(in oklab, var(--color-primary) 15%, var(--color-surface));
     color: var(--color-primary);
   }
 
   &:hover {
-    background-color: color-mix(in oklab, var(--color-primary) 10%, var(--color-white));
+    background-color: color-mix(in oklab, var(--color-primary) 10%, var(--color-surface));
   }
 
   &:focus {
@@ -470,16 +479,19 @@
 
 .accordion-body {
   padding: var(--spacing-lg);
+  color: var(--color-text-primary);
   font-size: clamp(var(--font-size-sm), 2cqw, var(--font-size-base));
   line-height: 1.6;
 }
 
 .list-group-item {
   transition: background-color var(--transition-normal) var(--transition-ease-in-out);
-  border-color: var(--color-neutral-300);
+  border-color: var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
 
   &:hover {
-    background-color: color-mix(in oklab, var(--color-primary) 5%, var(--color-white));
+    background-color: color-mix(in oklab, var(--color-primary) 5%, var(--color-surface));
   }
 
   h3 {
@@ -489,9 +501,9 @@
 }
 
 .alert-info {
-  border-color: color-mix(in oklab, var(--color-accent) 30%, var(--color-white));
-  background-color: color-mix(in oklab, var(--color-accent) 15%, var(--color-white));
-  color: color-mix(in oklab, var(--color-accent) 70%, var(--color-black));
+  border-color: color-mix(in oklab, var(--color-accent) 30%, var(--color-surface));
+  background-color: color-mix(in oklab, var(--color-accent) 15%, var(--color-surface));
+  color: var(--color-text-primary);
 
   .alert-heading {
     color: var(--color-accent);
@@ -499,24 +511,25 @@
   }
 
   .alert-link {
-    color: color-mix(in oklab, var(--color-accent) 80%, var(--color-black));
+    color: var(--color-accent);
     font-weight: 700;
     text-decoration: underline;
 
     &:hover {
-      color: var(--color-accent);
+      color: color-mix(in oklab, var(--color-accent) 80%, var(--color-canary-white));
     }
   }
 }
 
 .modal-content {
   border-radius: calc(var(--border-radius) * 2);
+  background-color: var(--color-surface);
 }
 
 .modal-header {
   padding: var(--spacing-lg);
-  background-color: color-mix(in oklab, var(--color-primary) 10%, var(--color-white));
-  border-block-end: 1px solid var(--color-neutral-300);
+  background-color: color-mix(in oklab, var(--color-primary) 10%, var(--color-surface));
+  border-block-end: 1px solid var(--color-border);
 
   .modal-title {
     color: var(--color-primary);
@@ -527,6 +540,7 @@
 
 .modal-body {
   padding: var(--spacing-xl);
+  color: var(--color-text-primary);
 
   h6 {
     margin-block: calc(1lh * 1) calc(1lh * 0.5);
@@ -553,8 +567,8 @@
 
 .modal-footer {
   padding: var(--spacing-lg);
-  background-color: var(--color-neutral-50);
-  border-block-start: 1px solid var(--color-neutral-300);
+  background-color: var(--color-neutral-50-adaptive);
+  border-block-start: 1px solid var(--color-border);
 }
 
 @media (prefers-reduced-motion: reduce) {
