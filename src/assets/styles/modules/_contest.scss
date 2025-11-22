@@ -242,6 +242,10 @@
       padding: var(--spacing-xl);
     }
   }
+
+  .list-unstyled li {
+    color: var(--color-text-primary);
+  }
 }
 
 .contest-prize-card--first {
@@ -289,12 +293,6 @@
   font-family: var(--font-family-heading);
   font-size: clamp(var(--font-size-2xl), 5cqw, var(--font-size-4xl));
   font-weight: 900;
-}
-
-.contest-prize-card {
-  .list-unstyled li {
-    color: var(--color-text-primary);
-  }
 }
 
 .contest-timeline-content {
